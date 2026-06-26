@@ -52,7 +52,7 @@ Configures executive monitoring parameters, mapping total operational volume cou
 
 
 📊 Dashboard Preview
-![Dashboard](dashboard_preview.png)
+![](dashboard_preview.png)
 
 
 🧠 Real Challenges Faced & Engineering Solutions
