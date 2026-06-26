@@ -1,4 +1,3 @@
-
 # End-to-End UK Financial Transactions Data Pipeline
 
 ## 🏆 Project Architecture & Summary
@@ -50,11 +49,7 @@ Models data dimensions into high-performance reporting memory tables via the Imp
 
 Configures executive monitoring parameters, mapping total operational volume counts, transactional settlement distributions, and a detailed transaction-level audit reporting grid.
 
-
 📊 Dashboard Preview
-![](dashboard_preview.png)
-
-
 🧠 Real Challenges Faced & Engineering Solutions
 This project provided hands-on experience with the classic bottlenecks that occur when moving data between different layers of a modern stack:
 
@@ -64,9 +59,8 @@ The Python Core Mismatch (ModuleNotFoundError): While launching the cloud loader
 
 The Serialization Bottleneck: The final cloud upload stream failed due to a missing package called pyarrow. Through log troubleshooting, I discovered that BigQuery handles DataFrame inputs via highly compressed Apache Arrow columnar binaries rather than raw text arrays. Running a targeted installation for pyarrow instantly finalized the handshake protocol and authorized the data load.
 
----
 📂 Project Directory Map
-Plaintext
+
 uk-financial-data-pipeline/
 ├── landing_zone/              # Local file staging layer (Hidden by .gitignore)
 ├── .gitignore                 # Active security shield protecting cloud credentials
@@ -75,8 +69,6 @@ uk-financial-data-pipeline/
 ├── load_to_cloud.py           # Stage 2: Google BigQuery secure streaming script
 ├── UK_Transaction_Analytics.pbix # Stage 3: Power BI Data Model & Dashboard
 └── dashboard_preview.png      # High-fidelity dashboard render for quick profile review
-
----
 
 Author: Tanya Amber
 
